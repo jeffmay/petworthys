@@ -1,5 +1,44 @@
 {% extends "voting/base.html" %}
 
+{% block css %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/voting.css"/>
+{% endblock %}
+
 {% block body %}
-    HELO!
+    <div id="header"></div>
+
+    <div id="content">
+        <nav id="categorys">
+            <div class="row">
+                <span class="span3"><a href="#datenight">Best Date Night</a></span>
+                <span class="span3"><a href="#bodega">Best Bodega</a></span>
+                <span class="span3"><a href="#takeout">Best Takeout</a></span>
+            </div>
+            <div class="row">
+                <span class="span3"><a href="#fashion">Best Fashion</a></span>
+                <span class="span3"><a href="#naildesign">Best Nail Design</a></span>
+                <span class="span3"><a href="#barbershop">Best Barber Shop</a></span>
+            </div>
+            <div class="row">
+                <span class="span3"><a href="#rookie">Rookie of the Year</a></span>
+                <span class="span3"><a href="#jamaican">Best Jamaican</a></span>
+                <span class="span3"><a href="#secret">Best Neighborhood Secret</a></span>
+            </div>
+            <div class="row">
+                <span class="span3"><a href="#patio">Best Patio</a></span>
+                <span class="span3"><a href="#brunch">Best Brunch</a></span>
+                <span class="span3"><a href="#happyhour">Best Happy Hour</a></span>
+            </div>
+            <div class="row">
+                <span class="span3"><a href="#petworthmade">Best Made in Petworth</a></span>
+            </div>
+        </nav>
+
+        <div id="voting">
+            <div class="category">
+            </div>
+        </div>
+    </div>
+
 {% endblock body %}

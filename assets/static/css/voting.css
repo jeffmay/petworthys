@@ -1,0 +1,42 @@
+#header {
+    width: 928px;
+    height: 200px;
+}
+
+#content {
+    width: 928px;
+    margin: 0 auto;
+}
+
+#categorys > .row > * {
+}
+#categorys > .row > * > a {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 12px;
+    font-size: 28px;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+}
+#categorys > .row > * {
+    background-color: grey;
+}
+#categorys > .row:nth-child(1) > *:nth-child(1) {
+    background-color: lightblue;
+}
+#categorys > .row:nth-child(1) > *:nth-child(2) {
+    background-color: green;
+}
+#categorys > .row:nth-child(1) > *:nth-child(3) {
+    background-color: #adff2f;
+}
+#categorys > .row:nth-child(2) > *:nth-child(1) {
+    background-color: orange;
+}
+#categorys > .row:nth-child(2) > *:nth-child(2) {
+    background-color: #8a2be2;
+}
+#categorys > .row > *:hover {
+    background-color: black !important;
+}
