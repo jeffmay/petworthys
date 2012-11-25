@@ -1,4 +1,10 @@
+# Django stuff
 *.log
 *.pot
 *.pyc
-local_settings.py
+**/local_settings.py
+
+*.db
+
+# Project files
+.idea
