@@ -1,10 +1,15 @@
 # Django settings for petworthys project.
+<<<<<<< HEAD
+import os
+=======
 from os.path import join, abspath, dirname
 
 PROJECT_ROOT = abspath(join(dirname(__file__), ".."))
+>>>>>>> 6055e802c5ebf61e89cf9042547452d97225d426
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
+PROJECT_ROOT = os.path.abspath('')
 
 ADMINS = (
     # ('Your Name', 'your_email@example.com'),
@@ -15,7 +20,11 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': join(PROJECT_ROOT,'db/petworthys.db'),                      # Or path to database file if using sqlite3.
+<<<<<<< HEAD
+        'NAME': os.path.join(PROJECT_ROOT, 'db/pethworthys.db'),                      # Or path to database file if using sqlite3.
+=======
+        'NAME': 'petworthys.db',                      # Or path to database file if using sqlite3.
+>>>>>>> 6055e802c5ebf61e89cf9042547452d97225d426
         'USER': '',                      # Not used with sqlite3.
         'PASSWORD': '',                  # Not used with sqlite3.
         'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
@@ -121,11 +130,12 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'petworthys.voting',
+    'django.contrib.admin',
+    'south'
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     'django.contrib.admindocs',
-    'south'
 )
 
 # A sample logging configuration. The only tangible logging
